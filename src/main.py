@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 try:
     from src.configuracoes import SimulacaoConfig
 except ModuleNotFoundError:
@@ -67,3 +68,11 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+=======
+from simulacao import simular
+from configuracoes import CENARIO_1, CENARIO_2
+from logs import registrar
+
+simular("CENÁRIO 1 - Estável", CENARIO_1, registrar)
+simular("CENÁRIO 2 - Crítico", CENARIO_2, registrar)
+>>>>>>> 22c94c5cea82f2b8a00cc4ee03d8a5dcc284771b
