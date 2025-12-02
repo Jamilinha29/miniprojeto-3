@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 try:
     from src.configuracoes import SimulacaoConfig
 except ModuleNotFoundError:
@@ -36,11 +35,8 @@ def main() -> None:
     parser.add_argument("--resumo", action="store_true", help="Gerar apenas o resumo em texto")
     args = parser.parse_args()
 
-    # Ajuste automático de parâmetros para execuções de teste quando --tabelas for usado.
-    # Isso evita estouros imediatos do buffer em runs rápidos de verificação.
     if args.tabelas:
         print("[AUTO-ADJUST] Modo de teste detectado (--tabelas): ajustando parâmetros para execução rápida.")
-        # Valores de teste: fluxo leve e buffer grande para não interromper imediatamente
         config.min_requisicoes = 5
         config.max_requisicoes = 20
         config.capacidade_buffer = 1000
@@ -68,11 +64,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-=======
-from simulacao import simular
-from configuracoes import CENARIO_1, CENARIO_2
-from logs import registrar
-
-simular("CENÁRIO 1 - Estável", CENARIO_1, registrar)
-simular("CENÁRIO 2 - Crítico", CENARIO_2, registrar)
->>>>>>> 22c94c5cea82f2b8a00cc4ee03d8a5dcc284771b
