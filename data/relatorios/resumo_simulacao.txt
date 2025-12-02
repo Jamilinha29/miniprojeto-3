@@ -1,0 +1,9 @@
+===== RESUMO DA SIMULAÇÃO =====
+Total de atendimentos de SUPORTE: 6330
+Total de atendimentos de VENDAS:  6206
+Total de falhas de SERVIDOR:      36
+Total de falhas de ATENDENTE:     121718
+Total de realocações registradas: 0
+Tamanho final da fila SUPORTE:    0
+Tamanho final da fila VENDAS:     0
+================================

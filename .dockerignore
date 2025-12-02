@@ -1,0 +1,16 @@
+__pycache__
+.venv
+venv
+.pytest_cache
+data/graficos
+data/tabelas
+data/relatorios/*.png
+.git
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.db
+*.sqlite3
+env/
+venv/
