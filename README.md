@@ -60,7 +60,7 @@ Testes
 - A suíte de testes usa `pytest`. Execute:
 
 ```powershell
-pytest -q
+
 ```
 
 Próximos passos sugeridos
@@ -102,7 +102,7 @@ Siga estes passos para manter o histórico de commits limpo e garantir que os ho
   git push origin <sua-branch>
   ```
 
-  Os hooks configurados em `.pre-commit-config.yaml` serão executados automaticamente ao dar `git commit`. Caso algum hook falhe, corrija os problemas apontados, adicione as alterações e tente commitar novamente.
+  Os hooks configurados em `.pre-commit-config.yaml` serão executados automaticamente ao dar `git commit`. Caso algum hook fpytest -qalhe, corrija os problemas apontados, adicione as alterações e tente commitar novamente.
 
 - **Atualizar hooks**:
 

@@ -25,17 +25,17 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
 
-      - name: Lint: black
+      - name: black
         run: |
           black --version
           black --check .
 
-      - name: Lint: isort
+      - name: isort
         run: |
           isort --version
           isort --check-only .
 
-      - name: Lint: ruff
+      - name: ruff
         run: |
           ruff --version
           ruff check .
